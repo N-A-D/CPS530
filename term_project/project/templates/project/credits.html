@@ -1,5 +1,5 @@
 {% extends "project/header.html" %}
-
+{% load staticfiles %}
 {% block content %}
 <ul class="menu vertical" data-accordion-menu data-multi-open="false" accordionmenu-arrow="true">
 <center>
@@ -8,7 +8,7 @@
 <li>
 	<ul class="vertical menu is-active">
 		<div class="credit">
-			<img class="image6" src="static/project/img/student1.jpg" alt="Mohammad Amjed"><br>
+			<img class="image6" src="{% static 'project/img/student1.jpeg' %}" alt="Mohammad Amjed"><br>
 			Email: mamjed@ryerson.ca<br>
 			<span class="sub-title">Resposibilies:</span>
 			<ul>
@@ -23,7 +23,7 @@
 <li>
 	<ul class="vertical menu">
 		<div class="credit">
-			<img class="image6" src="static/project/img/student2.jpeg" alt="Ned Datiles"><br>
+			<img class="image6" src="{% static 'project/img/student2.jpeg' %}" alt="Ned Datiles"><br>
 			Email: ned.austin.datiles@ryerson.ca<br>
 			<span class="sub-title">Resposibilies:</span>
 			<ul>
@@ -37,7 +37,7 @@
 <li>
 	<ul class="vertical menu">
 		<div class="credit">
-			<img class="image6" src="static/project/img/student3.jpeg" alt="Nial Hope"><br>
+			<img class="image6" src="{% static 'project/img/student3.jpeg' %}" alt="Nial Hope"><br>
 			Email: nhope@ryerson.ca<br>
 			<span class="sub-title">Resposibilies:</span>
 			<ul>
@@ -51,7 +51,7 @@
 <li>
 	<ul class="vertical menu">
 		<div class="credit">
-			<img class="image6" src="static/project/img/student4.jpg" alt="Vince De Vera"><br>
+			<img class="image6" src="{% static 'project/img/student4.jpeg' %}" alt="Vince De Vera"><br>
 			Email: vince.devera@ryerson.ca<br>
 			<span class="sub-title">Resposibilies:</span>
 			<ul>
