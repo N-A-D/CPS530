@@ -1,66 +1,60 @@
 {% extends "project/header.html" %}
 {% load staticfiles %}
 {% block content %}
-<ul class="menu vertical" data-accordion-menu data-multi-open="false" accordionmenu-arrow="true">
 <center>
-<p class="title" style="text-decoration:underline"> Group members </p>
-<!-- Mohammad Amjed Info -->
-<li>
-	<ul class="vertical menu is-active">
-		<div class="credit">
-			<img class="image6" src="{% static 'project/img/student1.jpeg' %}" alt="Mohammad Amjed"><br>
-			Email: mamjed@ryerson.ca<br>
-			<span class="sub-title">Resposibilies:</span>
-			<ul>
-				<li>Django Summary</li>
-				<li>2</li>
-			</ul>
-		</div>
-	</ul>
+<div class="credit content-wrap page6-top">Group Members</div>
 
-</li>	
+<!-- Mohammad Amjed Info -->
+<div class="credit content-wrap"">
+	<div><span class="title">Mohammad Amjed</span><br>
+	<img class="image6" src="{% static 'project/img/student1.jpeg' %}" alt="Mohammad Amjed"><br>
+	Email: mamjed@ryerson.ca<br>
+	<span class="sub-title">Resposibilies:</span>
+	<ul>
+		<li>Django Summary</li>
+		<li>2</li>
+	</ul>
+	</div>
+</div>
+
+
 <!-- Ned Datiles info -->
-<li>
-	<ul class="vertical menu">
-		<div class="credit">
-			<img class="image6" src="{% static 'project/img/student2.jpeg' %}" alt="Ned Datiles"><br>
-			Email: ned.austin.datiles@ryerson.ca<br>
-			<span class="sub-title">Resposibilies:</span>
-			<ul>
-				<li>Django Installion instruction</li>
-				<li>2</li>
-			</ul>
-		</div>
-	</ul>
-</li>	
-<!-- Nial Hope info -->
-<li>
-	<ul class="vertical menu">
-		<div class="credit">
-			<img class="image6" src="{% static 'project/img/student3.jpeg' %}" alt="Nial Hope"><br>
-			Email: nhope@ryerson.ca<br>
-			<span class="sub-title">Resposibilies:</span>
-			<ul>
-				<li>Foundation Summary</li>
-				<li>2</li>
-			</ul>
-		</div>
-	</ul>
-</li>
-<!-- Vince de Vera info -->
-<li>
-	<ul class="vertical menu">
-		<div class="credit">
-			<img class="image6" src="{% static 'project/img/student4.jpg' %}" alt="Vince De Vera"><br>
-			Email: vince.devera@ryerson.ca<br>
-			<span class="sub-title">Resposibilies:</span>
-			<ul>
-				<li>Foundation installation Instruction</li>
-				<li>2</li>
-			</ul>
-		</div>
-	</ul>
-</li>	
+<div class="credit content-wrap">
+	<div><span class="title"> Ned Datiles</span><br>
+		<img class="image6" src="{% static 'project/img/student2.jpeg' %}" alt="Ned Datiles"><br>
+		Email: ned.austin.datiles@ryerson.ca<br>
+		<span class="sub-title">Resposibilies:</span>
+		<ul>
+			<li>Django Installion instruction</li>
+			<li>2</li>
+		</ul>
+	</div>
+</div>
+	
+	<!-- Nial Hope info -->
+<div class="credit content-wrap">
+	<div><span class="title">Nial Hope</span><br>
+		<img class="image6" src="{% static 'project/img/student3.jpeg' %}" alt="Nial Hope"><br>
+		Email: nhope@ryerson.ca<br>
+		<span class="sub-title">Resposibilies:</span>
+		<ul>
+			<li>Foundation Summary</li>
+			<li>2</li>
+		</ul>
+	</div>
+</div>
+
+	<!-- Vince de Vera info -->
+<div class="credit content-wrap">
+	<div ><span class="title">Vince De Vera</span><br>
+		<img class="image6" src="{% static 'project/img/student4.jpg' %}" alt="Vince De Vera"><br>
+		Email: vince.devera@ryerson.ca<br>
+		<span class="sub-title">Resposibilies:</span>
+		<ul>
+			<li>Foundation installation Instruction</li>
+			<li>2</li>
+		</ul>
+	</div>
+</div>
 </center>
-</ul>
 {% endblock %}
