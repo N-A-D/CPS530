@@ -1,0 +1,53 @@
+body{
+	background-image: url("../img/index.png");
+	
+	background-size: 100%;
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+.fieldset{
+	width: 600px;
+	margin: 200px auto;
+
+	border-width: 2px 2px 6px 6px;
+	border-left-color: grey;
+	border-bottom-color: grey;
+	border-top-color: white;
+	border-right-color: white; 
+	color: white;
+}
+
+
+.header .main-menu {
+    width: 300px;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    background: blue;
+    height: auto;
+    border-radius: 3px;
+    display: block;
+    box-shadow: 0 0 20px rgba(0,0,0,.8);
+    list-style-type: none;
+}
+
+.image-style{
+	height: 50px;
+	display: block;
+	align-content: center;
+	 box-shadow: 0 0 20px rgba(0,0,0,.8);
+	 position: absolute;
+	 float: left;
+}
+
+.header .logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -90px;
+
+    width: 180px;
+    height: 60px;
+    float: left;
+    
+}
