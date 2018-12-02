@@ -32,16 +32,26 @@
 	
 }
 .title{
-	width: 400px;
+	
 	margin: auto;
-	font-size: 26px;
+	font-size: 32px;
 	text-align: center;
 	font-weight: bold;
+	text-decoration: underline;"
 }
 .sub-title{
 	font-size: 18px;
 	font-weight: bold;
 	margin-top: 15px;
+	text-align: left;
+	text-decoration: underline;
+}
+.subtitle{
+	font-size: 26px;
+	font-weight: bold;
+	margin-top: 15px;
+	
+	text-decoration: underline;
 }
 .img-style{
 	margin:10px auto;
@@ -64,6 +74,18 @@
 	height: 300px;
 	border-radius: 200px;
 }
+.container{
+	width: 80%;
+	margin: 20px 10% 20px 10%;
+	border: solid 5px ;
+	border-radius: 20px;
+	padding: 2%;
+	background-color: white;
+}
+code{
+	background-color: #ccffcc;
+}
+
 
 
 /* This is where the website css starts. */
