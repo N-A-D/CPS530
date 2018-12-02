@@ -2,7 +2,7 @@
 
 {% block content %}
 				<div>
-					<span> In this tutorial we will guide you through, how we created our webpage.</span><br>
+					<span> In this tutorial we will guide you through, how we created our webpage.</span><br><br>
 					<span><strong>Prerequisite</strong></span>
 					<ol>
 						<li>Ensure that Python 3 and <a href="/installations/"> Django for Python3</a> is installed.</li>
@@ -14,7 +14,7 @@
 						<li>Find the INSTALLED_APPS list and add the following as an item in the list: <pre><code>‘animes’,</code></pre></li>
 						<li>In the same working directory as, open up OurAnimeList/urls.py</li>
 						<li>At the top of the script file, import include from django.urls.</li>
-						<li>Find the urlpatterns list and add the following as an item in the list:<code> path(‘’, include(‘animes.urls’)),</code>save and exit the file.</li>
+						<li>Find the urlpatterns list and add the following as an item in the list:<code> path(‘’, include(‘animes.urls’)),</code></li>
 						<li>Change directory to animes.</li>
 						<li>Create a file called urls.py</li>
 						<li>Open up urls.py and enter in the following code:<code><pre>
@@ -22,13 +22,13 @@ from django.urls import path, include
 
 urlpatters = [
     path('', views.index, name='index'),
-]</pre></code>save and exit the file.</li>
+]</pre></code></li>
 						<li>Open up views.py with a text editor.</li>
 						<li>In views.py enter the following code:<code><pre>
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'animes/showcase.html')</pre></code> save and exit the file.</li>
+    return render(request, 'animes/showcase.html')</pre></code></li>
 					
 					</ol>
     					<hr>
