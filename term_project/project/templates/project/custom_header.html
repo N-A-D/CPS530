@@ -6,28 +6,24 @@
 	    <meta http-equiv="x-ua-compatible" content="ie=edge">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Best site ever</title>
-		<link rel="stylesheet" href="{% static 'project/css/foundation.css' %}" type='text/css'>
+		<link rel="stylesheet" href="{% static 'project/css/foundation.min.css' %}" type='text/css'>
 	    <link rel="stylesheet" href="{% static 'project/css/my.css' %}" type='text/css'>
 	    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet"> 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="{% static 'project/js/vendor/foundation.js' %}"></script>
 	</head>
-	<body class="body1">
-		
-		<header class="mhead">
-			<button  class="button nbutton" type="button" data-toggle="example-dropdown">Menu</button>
-				<div  class="dropdown-pane ndiv" id="example-dropdown" data-dropdown data-auto-focus="true">
-				  
-					<ul  style="list-style-type: none; ">
-						<li><a href="/summary/">Summary</a></li>
-				      	<li><a href="/installations/">Installations</a></li>
-				      	<li><a href="/tutorial/">Tutorial</a></li>
-					    <li><a href="/webpage/">Web Page</a></li>
-				      	<li><a href="/report/">Report</a></li>
-				      	<li><a href="/credit/">Credits</a></li>
-					</ul>				  
+	<body>
+		<!-- Header  -->
+		<header class="head" >
+			<div class="wrap">
+				<div >CPS530 Term Project
 				</div>
-				<div class="color-text" >Anime's Best </div>
+			</div>
+		</header>
+		
+		<body class="body1">
+		<header >
+			<div class="color-text" >Anime's Best </div>
 		</header>	
 
 		{% block content %}

@@ -1,9 +1,11 @@
 {% extends "project/header.html" %}
 
 {% block content %}
-				<div>
-					<span> In this tutorial we will guide you through, how we created our webpage.</span><br><br>
-					<span><strong>Prerequisite</strong></span>
+<div class="container">
+				<p class="title">Web Page Tutorial</p>
+				<div style="margin-top:15px;">
+					<p style="text-align: center;"> In this tutorial we will guide you through, how we created our webpage.</p>
+					<p class="sub-title"><strong>Prerequisite</strong></p>
 					<ol>
 						<li>Ensure that Python 3 and <a href="/installations/"> Django for Python3</a> is installed.</li>
 						<li>Create a project folder for your django project:<code> django-admin startproject OurAnimeList</code></li>
@@ -14,31 +16,31 @@
 						<li>Find the INSTALLED_APPS list and add the following as an item in the list: <pre><code>‘animes’,</code></pre></li>
 						<li>In the same working directory as, open up OurAnimeList/urls.py</li>
 						<li>At the top of the script file, import include from django.urls.</li>
-						<li>Find the urlpatterns list and add the following as an item in the list:<code> path(‘’, include(‘animes.urls’)),</code></li>
+						<li>Find the urlpatterns list and add the following as an item in the list:<code> path(‘’, include(‘animes.urls’)),</code>save and exit the file.</li>
 						<li>Change directory to animes.</li>
 						<li>Create a file called urls.py</li>
-						<li>Open up urls.py and enter in the following code:<code><pre>
+						<li>Open up urls.py and enter in the following code:<pre><code>
 from django.urls import path, include
 
 urlpatters = [
     path('', views.index, name='index'),
-]</pre></code></li>
+]</code></pre>save and exit the file.</li>
 						<li>Open up views.py with a text editor.</li>
-						<li>In views.py enter the following code:<code><pre>
+						<li>In views.py enter the following code:<pre><code>
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'animes/showcase.html')</pre></code></li>
+    return render(request, 'animes/showcase.html')</code></pre> save and exit the file.</li>
 					
 					</ol>
     					<hr>
-    					<span><strong>Page creation</strong></span>
+    					<p class="sub-title">Page creation</p>
     				<ol>
     					<li>Inside of the same directory, i.e., /animes/ create a new folder called templates</li>
     					<li>Inside of the templates directory, create a directory called: animes</li>
     					<li>Inside of templates/animes/ create an html file called header.html</li>
     					<div>
-<code><pre>
+<pre><code>
 &#123;&#37; load staticfiles &#37;&#125;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -81,12 +83,12 @@ def index(request):
     &lt;script src="js/app.js"&gt;&lt;/script&gt;
 	&lt;/body&gt;
 &lt;/html&gt;
-	</pre></code>
+	</code></pre>
 		<li>Inside of templates/animes/ create an html file called showcase.html</li>
 		<li> Open up showcase.html with and editor in the location mentioned in the previous step.</li>
 		<li>Inside of showcase.html add the following code:</li>
 		<div>
-			<code><pre>
+			<pre><code>
 &#123;&#37; extends "project/custom_header.html" &#37;&#125;
 
 &#123;&#37; block content &#37;&#125;
@@ -195,13 +197,13 @@ def index(request):
 	&lt;/div&gt;
 &lt;/section&gt;
 &#123;&#37; endblock &#37;&#125;
-    						</pre></code>
+    						</code></pre>
     					</div>
     					
 
     					<li>Inside of /animes/ create a new file called static/animes/css/my.css and insert the following code:</li>
     					<div>
-    						<code><pre>
+    						<pre><code>
 body{
 	background-image: url("../img/index.png");
 	background-size: 100%;
@@ -256,7 +258,7 @@ body{
 .r-image{
 	width: 240px;
 	height: 290px;
-}</pre></code>
+}</code></pre>
 					</div>
 						<li>Now Start the Django server from the project folder with: <code>python manage.py runserver</code></li>
 
@@ -264,5 +266,6 @@ body{
 
 
     				</ol>
+</div>
 </div>
 {% endblock %}
