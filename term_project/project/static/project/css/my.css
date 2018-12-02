@@ -65,6 +65,11 @@
 	height: 300px;
 	border-radius: 200px;
 }
+
+
+/* This is where the website css starts. */
+
+
 body{
 	background-image: url("../img/index.png");
 	
