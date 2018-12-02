@@ -146,3 +146,35 @@ body{
     
 }
 
+
+.card-section{
+	padding: 5px;
+	height: 80%;
+
+	
+}
+.card-divider{
+	padding: 5px;
+	background-color: rgb(51, 153, 255,0.1); 
+
+
+}
+.card{
+
+	width: 250px;
+	height: 325px;
+	background-color: rgb(51, 153, 255,0.1);
+	color: white; 
+	font-weight: bold;
+	border-color: rgb(51, 153, 255,0.1);
+	margin: 15px;
+
+}
+.grid-container{
+	display: grid;
+	 grid-template-columns: auto auto auto auto;
+}
+.r-image{
+	width: 240px;
+	height: 290px;
+}
