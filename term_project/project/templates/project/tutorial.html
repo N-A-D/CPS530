@@ -11,7 +11,7 @@
 						<span>In Django, a website is composed of applications. The main site just references them.</span>
 						<li>Type in the following to create an application with that project folder:<code> python manage.py startapp animes</code></li>
 						<li>In the same working directory, open yourProjectName/settings.py with an editor of your choice. </li>
-						<li>Find the INSTALLED_APPS list and add the following as an item in the list: ‘animes’,</li>
+						<li>Find the INSTALLED_APPS list and add the following as an item in the list: <pre><code>‘animes’,</code></pre></li>
 						<li>In the same working directory as, open up yourProjectName/urls.py</li>
 						<li>At the top of the script file, import include from django.urls.</li>
 						<li>Find the urlpatterns list and add the following as an item in the list:<code> path(‘’, include(‘animes.urls’)),</code>save and exit the file.</li>
