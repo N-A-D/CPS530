@@ -1,1 +1,2 @@
-# CPS530-TermProject
+# CPS530
+Course project for the intro to web dev class. 
